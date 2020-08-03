@@ -1,0 +1,54 @@
+<h1>Hey Customer Name</h1>
+
+<form method="POST" action="/add-Order">
+
+    <h1>Order here</h1>
+
+    <table>
+        <tr>
+            <td>
+                <label for="Coffee">Choose a Coffee:</label>
+            </td>
+            <td> <select id="coffee" name="coffee">
+                    <option value="">Select coffee type </option>
+                    <option value="Cappatino">Cappatino</option>
+                    <option value="Flat White ">Flat White</option>
+                    <option value="Caramel">Caramel</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Ice Coffee">Ice Coffee</option>
+                    <option value="Ice Choclate">Ice Choclate</option>
+                    <option value="Hot Choclate">Hot Choclate</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Extra hot?</lable>
+            </td>
+            <td><input type="radio" name="ExtraHot" value="Yes">
+                <label for="Extra Hot">Yes</label><br>
+                <input type="radio" id="female" name="ExtraHot" value="No">
+                <label for="Extra Hot">No</label></td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Add On</lable>
+            </td>
+            <td> 
+                <input type="checkbox" name="AddOn" value="Caramel">
+                <label for="AddOn">Caramel</label><br>
+                <input type="checkbox" id="female" name="AddOn" value="Choclate">
+                <label for="Add On">Choclate</label>
+                <input type="checkbox" name="AddOn" value="marshmello">
+                <label for="Add On">Marshmello</label>
+                <input type="checkbox" name="AddOn" value="Cream">
+                <label for="Add On">Cream</label>
+                <input type="checkbox" name="AddOn" value="Ice Cream">
+                <label for="Add On">Ice Cream</label></td>
+        </tr>
+        <tr>
+            <td> <input type="submit"/> </td>
+        </tr>
+
+    </table>
+</form>

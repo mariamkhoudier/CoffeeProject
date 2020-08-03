@@ -1,0 +1,32 @@
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<body>
+   
+    <table border="1" style="background-color: wheat;">
+        <thead>
+            <th>Coffee Type</th>
+            <th>Extra hot</th>
+            <th>Add Ons</th>
+        </thead>
+        {{#each orders}}
+        <tr>
+            <td>
+                {{this.coffee}}
+            </td>
+            <td>
+                {{this.ExtraHot}}
+            </td>
+            <td>
+                <ul>
+                    {{#each this.AddOn}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+
+</html>

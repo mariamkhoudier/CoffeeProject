@@ -1,0 +1,33 @@
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<body>
+    
+    
+    
+    <h1>Your order has been sbmitted successfully.</h1>
+    <table border="1" style="background-color: wheat;">
+        <thead>
+            <th>Coffee Type</th>
+            <th>Extra hot</th>
+            <th>Add Ons</th>
+        </thead>
+        <tr>
+            <td>
+                {{order.coffee}}
+            </td>
+            <td>
+                {{order.ExtraHot}}
+            </td>
+            <td>
+                <ul>
+                    {{#each order.AddOn}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
